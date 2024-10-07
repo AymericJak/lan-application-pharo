@@ -13,3 +13,10 @@ self assert: p addresseeName equals: '/'.
 self assert: p originatorName equals: '/'.
 self assert: p contents equals: ''
 ]
+
+{ #category : 'tests' }
+LNPacketTest >> testIsAddressedTo [
+
+^ (LNPacket new addresseeName: 'Mac') isAddressedTo: (LNNode new
+name: 'Mac')
+]

@@ -52,6 +52,12 @@ LNPacket >> initialize [
 	contents := ''
 ]
 
+{ #category : 'testing' }
+LNPacket >> isAddressedTo: aNode [
+
+	^ (aNode name) = (self addresseeName)
+]
+
 { #category : 'accessing' }
 LNPacket >> originatorName [
 
