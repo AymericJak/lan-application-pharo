@@ -20,6 +20,12 @@ Class {
 }
 
 { #category : 'accessing' }
+LNNode >> hasNextNode [
+
+	^ nextNode notNil
+]
+
+{ #category : 'accessing' }
 LNNode >> name [
 	^ name
 ]

@@ -6,6 +6,12 @@ Class {
 }
 
 { #category : 'tests' }
+LNNodeTest >> testHasNextNode [
+
+	self deny: LNNode new hasNextNode
+]
+
+{ #category : 'tests' }
 LNNodeTest >> testName [
 
 	| node |
