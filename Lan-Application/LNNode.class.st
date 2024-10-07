@@ -33,6 +33,13 @@ LNNode >> hasNextNode [
 ]
 
 { #category : 'accessing' }
+LNNode >> initialize [
+
+	super initialize.
+	name := 'unamed'
+]
+
+{ #category : 'accessing' }
 LNNode >> name [
 	^ name
 ]
@@ -53,6 +60,16 @@ LNNode >> nextNode [
 LNNode >> nextNode: aLNNode [
 
 	nextNode := aLNNode
+]
+
+{ #category : 'accessing' }
+LNNode >> printOn: aStream [
+
+	aStream nextPutAll: self name.
+	aStream nextPutAll: ' -> '.
+	nextNode
+		ifNil: [ aStream nextPutAll: '/' ]
+		ifNotNil: [ aStream nextPutAll: nextNode name ]
 ]
 
 { #category : 'visiting' }
