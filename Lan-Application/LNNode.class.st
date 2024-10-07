@@ -19,6 +19,13 @@ Class {
 	#package : 'Lan-Application'
 }
 
+{ #category : 'visiting' }
+LNNode >> accept: aPacket [
+	"Having received aPacket, send it on. This is the default behavior. My subclasses may override me to do something special."
+
+	self send: aPacket
+]
+
 { #category : 'accessing' }
 LNNode >> hasNextNode [
 
@@ -46,4 +53,13 @@ LNNode >> nextNode [
 LNNode >> nextNode: aLNNode [
 
 	nextNode := aLNNode
+]
+
+{ #category : 'visiting' }
+LNNode >> send: aPacket [
+nextNode ifNotNil: [
+self name trace.
+' sends a packet to: ' trace.
+nextNode name traceCr.
+nextNode accept: aPacket ]
 ]
