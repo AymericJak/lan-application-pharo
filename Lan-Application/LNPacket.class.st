@@ -69,3 +69,12 @@ LNPacket >> originatorName: anObject [
 
 	originatorName := anObject
 ]
+
+{ #category : 'testing' }
+LNPacket >> printOn: aStream [
+
+	aStream nextPutAll: 'a LNPacket: '.
+	aStream nextPutAll: self contents.
+	aStream nextPutAll: ' sentTo: '.
+	aStream nextPutAll: self addresseeName
+]
