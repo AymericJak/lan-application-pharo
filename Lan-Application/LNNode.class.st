@@ -15,8 +15,9 @@ Class {
 		'name',
 		'nextNode'
 	],
-	#category : 'Lan-Application',
-	#package : 'Lan-Application'
+	#category : 'Lan-Application-Models',
+	#package : 'Lan-Application',
+	#tag : 'Models'
 }
 
 { #category : 'visiting' }
@@ -32,7 +33,7 @@ LNNode >> hasNextNode [
 	^ nextNode notNil
 ]
 
-{ #category : 'accessing' }
+{ #category : 'initialization' }
 LNNode >> initialize [
 
 	super initialize.
@@ -62,7 +63,7 @@ LNNode >> nextNode: aLNNode [
 	nextNode := aLNNode
 ]
 
-{ #category : 'accessing' }
+{ #category : 'printing' }
 LNNode >> printOn: aStream [
 
 	aStream nextPutAll: self name.

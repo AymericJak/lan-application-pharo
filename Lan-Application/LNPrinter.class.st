@@ -8,8 +8,9 @@ Responsibility:
 Class {
 	#name : 'LNPrinter',
 	#superclass : 'LNNode',
-	#category : 'Lan-Application',
-	#package : 'Lan-Application'
+	#category : 'Lan-Application-Models',
+	#package : 'Lan-Application',
+	#tag : 'Models'
 }
 
 { #category : 'visiting' }

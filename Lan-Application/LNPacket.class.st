@@ -15,8 +15,9 @@ Class {
 		'addresseeName',
 		'originatorName'
 	],
-	#category : 'Lan-Application',
-	#package : 'Lan-Application'
+	#category : 'Lan-Application-Models',
+	#package : 'Lan-Application',
+	#tag : 'Models'
 }
 
 { #category : 'accessing' }
@@ -43,7 +44,7 @@ LNPacket >> contents: anObject [
 	contents := anObject
 ]
 
-{ #category : 'accessing' }
+{ #category : 'initialization' }
 LNPacket >> initialize [
 
 	super initialize.
@@ -70,7 +71,7 @@ LNPacket >> originatorName: anObject [
 	originatorName := anObject
 ]
 
-{ #category : 'testing' }
+{ #category : 'printing' }
 LNPacket >> printOn: aStream [
 
 	aStream nextPutAll: 'a LNPacket: '.

@@ -8,8 +8,9 @@ Responsibility: (the ones of LNNode)
 Class {
 	#name : 'LNWorkstation',
 	#superclass : 'LNNode',
-	#category : 'Lan-Application',
-	#package : 'Lan-Application'
+	#category : 'Lan-Application-Models',
+	#package : 'Lan-Application',
+	#tag : 'Models'
 }
 
 { #category : 'instance creation' }

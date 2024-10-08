@@ -1,8 +1,9 @@
 Class {
 	#name : 'LNPacketTest',
 	#superclass : 'TestCase',
-	#category : 'Lan-Application',
-	#package : 'Lan-Application'
+	#category : 'Lan-Application-Tests',
+	#package : 'Lan-Application',
+	#tag : 'Tests'
 }
 
 { #category : 'tests' }
